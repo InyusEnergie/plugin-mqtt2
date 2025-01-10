@@ -31,7 +31,7 @@
         {
             "name": "DevAddr",
             "type": "info",
-            "subtype": "other",
+            "subtype": "string",
             "isVisible": 1,
             "isHistorized": 0,
             "logicalId" : "event/up/devAddr"
@@ -39,7 +39,7 @@
         {
             "name": "Device Name",
             "type": "info",
-            "subtype": "other",
+            "subtype": "string",
             "isVisible": 1,
             "isHistorized": 0,
             "logicalId" : "event/up/deviceInfo/deviceName"
@@ -47,7 +47,7 @@
         {
             "name": "Device Class",
             "type": "info",
-            "subtype": "other",
+            "subtype": "string",
             "isVisible": 1,
             "isHistorized": 0,
             "logicalId" : "event/up/deviceInfo/deviceClassEnabled"
@@ -55,7 +55,7 @@
         {
             "name": "Application Name",
             "type": "info",
-            "subtype": "other",
+            "subtype": "string",
             "isVisible": 1,
             "isHistorized": 0,
             "logicalId" : "event/up/deviceInfo/applicationName"
@@ -63,7 +63,7 @@
         {
             "name": "Tenant Name",
             "type": "info",
-            "subtype": "other",
+            "subtype": "string",
             "isVisible": 1,
             "isHistorized": 0,
             "logicalId" : "event/up/deviceInfo/tenantName"
@@ -103,7 +103,7 @@
         {
             "name": "Gateway Id",
             "type": "info",
-            "subtype": "other",
+            "subtype": "string",
             "isVisible": 1,
             "isHistorized": 1,
             "logicalId" : "event/up/rxInfo/0/gatewayId"
@@ -111,7 +111,7 @@
         {
             "name": "CRC",
             "type": "info",
-            "subtype": "other",
+            "subtype": "string",
             "isVisible": 1,
             "isHistorized": 0,
             "logicalId" : "event/up/rxInfo/0/crcStatus"
@@ -159,7 +159,7 @@
         {
             "name": "Code Rate",
             "type": "info",
-            "subtype": "other",
+            "subtype": "string",
             "isVisible": 1,
             "isHistorized": 0,
             "logicalId" : "event/up/txInfo/modulation/lora/codeRate"
