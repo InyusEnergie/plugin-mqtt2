@@ -690,6 +690,13 @@ class mqtt2 extends eqLogic {
             if (count($eqlogics) != 0) {
                self::handleMqttSubMessage($eqlogics, $value);
             }
+           	
+			foreach ($value as $subkey => $subvalue) {
+				$eqlogics = self::byLogicalId($topic . '/' . $key.'/'.$subkey, __CLASS__, true);
+				if (count($eqlogics) != 0) {
+					self::handleMqttSubMessage($eqlogics, $subvalue);
+				}
+			}
          }
 
          if (isset($message['eqLogic']) && isset($message['eqLogic']['battery'])) {
