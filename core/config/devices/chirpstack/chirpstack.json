@@ -1,0 +1,13 @@
+{
+    "name" : "Chirpstack",
+    "commands" : [
+        {
+            "name": "Etat",
+            "type": "info",
+            "subtype": "other",
+            "isVisible": 0,
+            "isHistorized": 0,
+            "logicalId" : "status"
+        }
+    ]
+}
