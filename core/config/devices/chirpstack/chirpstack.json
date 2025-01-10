@@ -1,0 +1,201 @@
+{
+    "name" : "Chirpstack",
+    "commands" : [
+        {
+            "name": "Payload",
+            "type": "info",
+            "subtype": "string",
+            "isVisible": 1,
+            "isHistorized": 1,
+            "logicalId" : "event/up/data"
+        },
+        {
+            "name": "Downlink",
+            "type": "action",
+            "subtype": "message",
+            "isVisible": 1,
+            "isHistorized": 0,
+            "logicalId" : "command/down",
+			"configuration": {
+				"message" : "#message#"
+			}
+        },
+        {
+            "name": "Confirmed",
+            "type": "info",
+            "subtype": "binary",
+            "isVisible": 1,
+            "isHistorized": 0,
+            "logicalId" : "event/up/confirmed"
+        },
+        {
+            "name": "DevAddr",
+            "type": "info",
+            "subtype": "string",
+            "isVisible": 1,
+            "isHistorized": 0,
+            "logicalId" : "event/up/devAddr"
+        },
+        {
+            "name": "Device Name",
+            "type": "info",
+            "subtype": "string",
+            "isVisible": 1,
+            "isHistorized": 0,
+            "logicalId" : "event/up/deviceInfo/deviceName"
+        },
+        {
+            "name": "Device Class",
+            "type": "info",
+            "subtype": "string",
+            "isVisible": 1,
+            "isHistorized": 0,
+            "logicalId" : "event/up/deviceInfo/deviceClassEnabled"
+        },
+        {
+            "name": "Application Name",
+            "type": "info",
+            "subtype": "string",
+            "isVisible": 1,
+            "isHistorized": 0,
+            "logicalId" : "event/up/deviceInfo/applicationName"
+        },
+        {
+            "name": "Tenant Name",
+            "type": "info",
+            "subtype": "string",
+            "isVisible": 1,
+            "isHistorized": 0,
+            "logicalId" : "event/up/deviceInfo/tenantName"
+        },
+        {
+            "name": "Data Rate",
+            "type": "info",
+            "subtype": "numeric",
+            "isVisible": 1,
+            "isHistorized": 1,
+            "logicalId" : "event/up/dr"
+        },
+        {
+            "name": "Frame Count",
+            "type": "info",
+            "subtype": "numeric",
+            "isVisible": 1,
+            "isHistorized": 1,
+            "logicalId" : "event/up/fCnt"
+        },
+        {
+            "name": "Fport",
+            "type": "info",
+            "subtype": "numeric",
+            "isVisible": 1,
+            "isHistorized": 1,
+            "logicalId" : "event/up/fPort"
+        },
+        {
+            "name": "Channel",
+            "type": "info",
+            "subtype": "numeric",
+            "isVisible": 1,
+            "isHistorized": 1,
+            "logicalId" : "event/up/rxInfo/0/channel"
+        },
+        {
+            "name": "Gateway Id",
+            "type": "info",
+            "subtype": "string",
+            "isVisible": 1,
+            "isHistorized": 1,
+            "logicalId" : "event/up/rxInfo/0/gatewayId"
+        },
+        {
+            "name": "CRC",
+            "type": "info",
+            "subtype": "string",
+            "isVisible": 1,
+            "isHistorized": 0,
+            "logicalId" : "event/up/rxInfo/0/crcStatus"
+        },
+        {
+            "name": "RSSI",
+            "type": "info",
+            "subtype": "numeric",
+            "isVisible": 1,
+            "isHistorized": 1,
+            "logicalId" : "event/up/rxInfo/0/rssi"
+        },
+        {
+            "name": "SNR",
+            "type": "info",
+            "subtype": "numeric",
+            "isVisible": 1,
+            "isHistorized": 1,
+            "logicalId" : "event/up/rxInfo/0/snr"
+        },
+        {
+            "name": "Frequency",
+            "type": "info",
+            "subtype": "numeric",
+            "isVisible": 1,
+            "isHistorized": 1,
+            "logicalId" : "event/up/txInfo/frequency"
+        },
+        {
+            "name": "Bande Passante",
+            "type": "info",
+            "subtype": "numeric",
+            "isVisible": 1,
+            "isHistorized": 1,
+            "logicalId" : "event/up/txInfo/modulation/lora/bandwidth"
+        },
+        {
+            "name": "Spreading Factor",
+            "type": "info",
+            "subtype": "numeric",
+            "isVisible": 1,
+            "isHistorized": 1,
+            "logicalId" : "event/up/txInfo/modulation/lora/spreadingFactor"
+        },
+        {
+            "name": "Code Rate",
+            "type": "info",
+            "subtype": "string",
+            "isVisible": 1,
+            "isHistorized": 0,
+            "logicalId" : "event/up/txInfo/modulation/lora/codeRate"
+        },
+        {
+            "name": "Battery",
+            "type": "info",
+            "subtype": "numeric",
+            "isVisible": 1,
+            "isHistorized": 1,
+			"unite": "%",
+            "logicalId" : "event/status/batteryLevel"
+        },
+        {
+            "name": "Margin",
+            "type": "info",
+            "subtype": "numeric",
+            "isVisible": 1,
+            "isHistorized": 1,
+            "logicalId" : "event/status/margin"
+        },
+        {
+            "name": "Secteur",
+            "type": "info",
+            "subtype": "binary",
+            "isVisible": 1,
+            "isHistorized": 0,
+            "logicalId" : "event/status/externalPowerSource"
+        },
+        {
+            "name": "Battery unavailable",
+            "type": "info",
+            "subtype": "binary",
+            "isVisible": 1,
+            "isHistorized": 0,
+            "logicalId" : "event/status/batteryLevelUnavailable"
+        }
+    ]
+}
