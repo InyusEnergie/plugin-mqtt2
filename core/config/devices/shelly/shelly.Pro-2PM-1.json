@@ -6,7 +6,7 @@
             "type": "info",
             "subtype": "binary",
             "isVisible": 0,
-            "isHistorized": 0,
+            "isHistorized": 1,
 				"display": {
 					"generic_type": "HEATING_STATE",
                     "parameters": {
@@ -70,7 +70,7 @@
             "type": "info",
             "subtype": "numeric",
             "isVisible": 1,
-            "isHistorized": 0,
+               "isHistorized": 1,
                 "display": {
                     "generic_type": "POWER"
                 },
@@ -82,7 +82,7 @@
             "type": "info",
             "subtype": "numeric",
             "isVisible": 1,
-            "isHistorized": 0,
+            "isHistorized": 1,
                 "display": {
                     "generic_type": "CONSUMPTION"
                 },
