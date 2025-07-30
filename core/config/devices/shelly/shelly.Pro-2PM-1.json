@@ -1,0 +1,120 @@
+{
+    "name" : "Shelly Pro 2PM-1",
+    "commands" : [
+        {
+            "name": "Etat",
+            "type": "info",
+            "subtype": "binary",
+            "isVisible": 0,
+            "isHistorized": 0,
+				"display": {
+					"generic_type": "HEATING_STATE",
+                    "parameters": {
+						"time": "duration"
+					}
+                },
+            "logicalId" : "status/switch:1/output"
+        },
+        {
+            "name": "On",
+            "type": "action",
+            "subtype": "other",
+            "isVisible": 1,
+            "isHistorized": 0,
+            "logicalId" : "rpc",
+            "value" : "Etat",
+            "configuration":{
+                "message":"{method:'Switch.Set', params:{id:1,on:true}}"
+            },
+			"display": {
+                    "generic_type": "HEATING_ON"
+                },
+            "template":{
+                "dashboard":"core::prise",
+                "mobile":"core::prise"
+            }
+        },
+        {
+            "name": "Off",
+            "type": "action",
+            "subtype": "other",
+            "isVisible": 1,
+            "isHistorized": 0,
+            "logicalId" : "rpc",
+            "value" : "Etat",
+            "configuration":{
+                "message":"{method:'Switch.Set', params:{id:1,on:false}}"
+            },
+			"display": {
+                    "generic_type": "HEATING_OFF"
+                },
+            "template":{
+                "dashboard":"core::prise",
+                "mobile":"core::prise"
+            }
+        },
+        {
+            "name": "Toggle",
+            "type": "action",
+            "subtype": "other",
+            "isVisible": 0,
+            "isHistorized": 0,
+            "logicalId" : "rpc",
+            "value" : "Etat",
+            "configuration":{
+                "message":"{method:'Switch.Toggle', params:{id:1}}"
+            }
+        },
+        {
+            "name": "Puissance",
+            "type": "info",
+            "subtype": "numeric",
+            "isVisible": 1,
+            "isHistorized": 0,
+                "display": {
+                    "generic_type": "POWER"
+                },
+            "unite" : "W",
+            "logicalId" : "status/switch:1/apower"
+        },
+        {
+            "name": "Consommation",
+            "type": "info",
+            "subtype": "numeric",
+            "isVisible": 1,
+            "isHistorized": 0,
+                "display": {
+                    "generic_type": "CONSUMPTION"
+                },
+            "unite" : "kWh",
+            "logicalId" : "status/switch:1/aenergy/total"
+        },
+        {
+            "name": "Température",
+            "type": "info",
+            "subtype": "numeric",
+            "isVisible": 1,
+            "isHistorized": 0,
+            "unite": "°C",
+            "logicalId" : "status/switch:1/temperature/tC"
+        },
+        {
+            "name": "Courant",
+            "type": "info",
+            "subtype": "numeric",
+            "isVisible": 1,
+            "isHistorized": 0,
+            "unite": "°C",
+            "logicalId" : "status/switch:1/current"
+        },
+        {
+            "name": "Voltage",
+            "type": "info",
+            "subtype": "numeric",
+            "isVisible": 1,
+            "isHistorized": 0,
+            "unite": "°C",
+            "logicalId" : "status/switch:1/voltage"
+        }
+    ]
+}
