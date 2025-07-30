@@ -93,7 +93,7 @@
             "name": "Température",
             "type": "info",
             "subtype": "numeric",
-            "isVisible": 1,
+            "isVisible": 0,
             "isHistorized": 0,
             "unite": "°C",
             "logicalId" : "status/switch:1/temperature/tC"
@@ -102,18 +102,18 @@
             "name": "Courant",
             "type": "info",
             "subtype": "numeric",
-            "isVisible": 1,
+            "isVisible": 0,
             "isHistorized": 0,
-            "unite": "°C",
+            "unite": "A",
             "logicalId" : "status/switch:1/current"
         },
         {
             "name": "Voltage",
             "type": "info",
             "subtype": "numeric",
-            "isVisible": 1,
+            "isVisible": 0,
             "isHistorized": 0,
-            "unite": "°C",
+            "unite": "V",
             "logicalId" : "status/switch:1/voltage"
         }
     ]
